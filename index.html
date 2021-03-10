@@ -5,35 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript 實作輪播套件</title>
+    <!-- 連css不是scss -->
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <!-- 輪播圖的大盒子 -->
-    <div id="slider-box">
+    <!-- 輪播圖大盒子 -->
+    <div id="slider-box" data-s-interval="3000" data-s-showdots="true">
         <!-- 輪播圖內的項目，圖片與內容 -->
-        <div class="slider-item">
-            <h1>衣服1</h1>
+        <div class="slider-item slider-active">
+            <h1>Hebe</h1>
         </div>
         <div class="slider-item">
-            <h1>衣服2</h1>
+            <h1>TIME WILL TELL</h1>
         </div>
         <div class="slider-item">
-            <h1>衣服2</h1>
+            <h1>Anything Goes</h1>
+        </div>
+        <div class="slider-item">
+            <h1>Untold</h1>
+        </div>
+        <div class="slider-item">
+            <h1>A Song for You</h1>
         </div>
 
-
-        <!-- 上一張與下一張 -->
+        <!-- 上一張與下一張按鈕 -->
         <div id="slider-prev"></div>
         <div id="slider-next"></div>
 
         <!-- 點點 -->
         <div id="slider-dots">
+            <span class="slider-dot slider-dot-active"></span>
+            <span class="slider-dot"></span>
             <span class="slider-dot"></span>
             <span class="slider-dot"></span>
             <span class="slider-dot"></span>
         </div>
     </div>
+
+    <script src="./main.js"></script>
 </body>
 
-</heml>
+</html>
